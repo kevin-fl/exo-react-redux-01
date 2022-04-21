@@ -4,10 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+//necessaire pour  le store
+
+import {Provider} from 'react-redux';
+import store from './store/store';
+
+
+// mettre en place le provider , mettre l app a linterieur 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
     <App />
+    </Provider>
   </React.StrictMode>
 );
 
