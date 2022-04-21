@@ -1,7 +1,7 @@
 import ButtonAction from '../../components/button-action/button-action';
 import PropTypes from 'prop-types';
 
-const CounterAction = ({ step }) => {
+const CounterInteraction = ({ step }) => {
 
     return (
         <div>
@@ -11,12 +11,12 @@ const CounterAction = ({ step }) => {
     );
 };
 
-CounterAction.propTypes = {
+CounterInteraction.propTypes = {
     step: PropTypes.number
 };
 
-CounterAction.defaultProps = {
+CounterInteraction.defaultProps = {
     step: 1
 };
 
-export default CounterAction;
+export default CounterInteraction;
